@@ -3,5 +3,5 @@
     <dimen name="size_image">128dp</dimen>
     <dimen name="size_icon">24dp</dimen>
     
-    <dimen name="vertical_spacing"
+    <dimen name="vertical_spacing">24dp</dimen>
 </resources>

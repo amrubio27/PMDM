@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut01.ex03.Ut01Ex03Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text01"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text02"
+        android:text="@string/title"
+        android:layout_below="@+id/text01"/>
+
+    <TextView
+        android:id="@+id/text03"
+        android:text="@string/title"
+        android:layout_above="@+id/text02"
+        android:layout_toEndOf="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/text04"
+        android:text="@string/title"
+        android:layout_above="@+id/text03"
+        android:layout_toEndOf="@+id/text02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="right"
+        android:id="@+id/text05"
+        android:text="@string/title"
+        android:layout_toEndOf="@+id/text02"
+        android:textColor="@color/red"
+        android:layout_below="@+id/text01"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
