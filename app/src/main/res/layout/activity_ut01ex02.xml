@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    tools:context=".ut01.ex02.presentation.Ut01Ex02Activity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconSandia"
+        android:layout_width="@dimen/size_image"
+        android:layout_height="@dimen/size_image"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_sandia" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/Fecha"
+        android:textAlignment="gravity" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:text="@string/title_demo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/content" />
+
+    </LinearLayout>
+
+</LinearLayout>
