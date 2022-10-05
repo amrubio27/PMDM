@@ -9,6 +9,7 @@
     <RelativeLayout
         android:id="@+id/ImagenDelProducto"
         android:layout_width="match_parent"
+        android:layout_margin="6dp"
         android:layout_height="@dimen/size_image">
 
 
@@ -52,6 +53,7 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/StoreIcon"
+            android:background="@color/yellow"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_alignBottom="@+id/iconSandia"
@@ -62,6 +64,7 @@
 
     <RelativeLayout
         android:id="@+id/Contenido"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ImagenDelProducto">
@@ -89,6 +92,7 @@
         android:id="@+id/UltimaLinea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/Contenido">
 
         <ImageView
