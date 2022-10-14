@@ -4,4 +4,5 @@
     <dimen name="size_icon">24dp</dimen>
     
     <dimen name="vertical_spacing">24dp</dimen>
+    <dimen name="both_spacing">24dp</dimen>
 </resources>

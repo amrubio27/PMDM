@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ut01.ex04.Ut01Ex04Activity">
+
+    <RelativeLayout
+        android:id="@+id/ImagenDelProducto"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:layout_height="@dimen/size_image">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iconSandia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_sandia" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="TITULO DE PRUEBA"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Favourite"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:layout_alignRight="@+id/iconSandia"
+            android:layout_margin="12dp"
+            android:src="@drawable/favorite_fill1_wght400_grad0_opsz48"
+            app:tint="@color/grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Star"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:layout_alignParentLeft="@+id/iconSandia"
+            android:layout_margin="12dp"
+            android:src="@drawable/star_fill1_wght400_grad0_opsz48"
+            app:tint="@color/grey" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/StoreIcon"
+            android:background="@color/yellow"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignBottom="@+id/iconSandia"
+            android:layout_alignParentLeft="@+id/iconSandia"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_sandia" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Contenido"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImagenDelProducto">
+
+        <TextView
+            android:id="@+id/TituloProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_icon"
+            android:paddingTop="12dp"
+            android:text="Pack Sorpresa"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SubtituloProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TituloProducto"
+            android:paddingLeft="@dimen/size_icon"
+            android:text="Aviso de recogida con la Hora:Minutos" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/UltimaLinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/Contenido">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/size_icon"
+            android:id="@+id/estrellita"
+            android:layout_width="@dimen/size_icon"
+            android:layout_height="@dimen/size_icon"
+            android:src="@drawable/star_fill1_wght400_grad0_opsz48"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:layout_toRightOf="@id/estrellita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.7"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:text="2.99 $"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="24dp"
+            android:text="4,1 Km"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

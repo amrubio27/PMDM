@@ -4,4 +4,8 @@
     <string name="Fecha">Viernes 30 SEP</string>
     <string name="title_demo">TIULO EN GRANDE</string>
     <string name="content">CONTENIDO DE PRUEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</string>
+    
+    <string name="font_label_name">Nombre</string>
+    <string name="font_label_surname">Apellidos</string>
+    <string name="form_label_save">Guardar</string>
 </resources>
