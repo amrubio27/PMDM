@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/foto_tapa"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:background="#B5FFAA00"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_sandia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Puesto_tapa"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_margin="12dp"
+        android:background="@color/teal_200"
+        android:src="@drawable/ic_sandia"
+        app:layout_constraintStart_toStartOf="@id/foto_tapa"
+        app:layout_constraintTop_toTopOf="@id/foto_tapa" />
+
+    <TextView
+        android:id="@+id/Titulo_Tapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="Titulo de la tapa"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/foto_tapa"
+        app:layout_constraintTop_toBottomOf="@+id/foto_tapa" />
+
+    <TextView
+        android:id="@+id/Descripcion_tapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="Una breve pero intensa descripcion"
+        app:layout_constraintStart_toStartOf="@id/Titulo_Tapa"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Tapa" />
+
+    <TextView
+        android:id="@+id/Texto_1"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="Texto"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/foto_tapa"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion_tapa" />
+
+    <TextView
+        android:id="@+id/Texto_2"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="Texto2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/foto_tapa"
+        app:layout_constraintStart_toEndOf="@id/Texto_1"
+        app:layout_constraintTop_toBottomOf="@+id/Descripcion_tapa" />
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/Favourite_button"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/star_fill1_wght400_grad0_opsz48"
+        app:layout_constraintStart_toEndOf="@+id/Texto_2"
+        app:layout_constraintTop_toBottomOf="@id/Descripcion_tapa"
+        app:tint="@color/grey" />
+
+    <ImageView
+        android:id="@+id/Like_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/favorite_fill1_wght400_grad0_opsz48"
+        app:layout_constraintEnd_toEndOf="@id/foto_tapa"
+        app:layout_constraintTop_toBottomOf="@id/Titulo_Tapa"
+        app:tint="@color/red" />
+
+    <ImageView
+        android:id="@+id/Share_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/star_fill1_wght400_grad0_opsz48"
+        app:layout_constraintEnd_toStartOf="@id/Like_button"
+        app:layout_constraintTop_toBottomOf="@id/Titulo_Tapa"
+        app:tint="@color/green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
